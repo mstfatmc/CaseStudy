@@ -150,7 +150,6 @@ namespace CaseStudy.Services
                 throw new ValidationException("Company AdvertisementLimit is reached");
             }
 
-            //TODO : nedense çalışmıyor. link: https://docs.microsoft.com/en-us/ef/core/saving/related-data
             companyEntity.JobEntities.Add(new JobEntity()
             {
                 Benefits = postCompanyJobAdvertisementServiceRequest.Benefits,
